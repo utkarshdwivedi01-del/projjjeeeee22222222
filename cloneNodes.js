@@ -24,7 +24,7 @@ export default function cloneNodes(nodes, source = undefined, raws = undefined) 
           return false
         }
 
-        // Otherwise we can safely replace the source
+        // Otherwise we can safely replace the source or any other thing that might get lost
         // And continue traversing
         node.source = source
       })
